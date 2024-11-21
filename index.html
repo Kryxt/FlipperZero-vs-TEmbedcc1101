@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comparaison détaillée entre Flipper Zero et T-Embed CC1101, deux outils dédiés aux projets sans fil et à la manipulation de protocoles RF.">
+    <meta name="keywords" content="Flipper Zero, T-Embed CC1101, comparaison, outils sans fil, RF, Bluetooth, NFC, ESP32, CC1101">
+    <meta name="author" content="Kryxt">
+    <title>Comparaison Flipper Zero vs T-Embed CC1101</title>
+
+    <!-- Lien vers la feuille de style principale -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lien vers les icônes Font Awesome pour les symboles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Précharge les images pour améliorer les performances -->
+    <link rel="preload" href="flipper-zero.jpg" as="image">
+    <link rel="preload" href="t-embed.jpg" as="image">
+
+    <!-- Précharge la police Google Fonts si utilisée -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="font" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- En-tête de la page -->
+    <header>
+        <h1>Comparaison : Flipper Zero vs T-Embed CC1101</h1>
+        <!-- Bouton pour activer/désactiver le mode sombre -->
+        <button class="toggle-dark-mode" aria-label="Activer/Désactiver le mode sombre" onclick="toggleDarkMode()">🌙</button>
+    </header>
+
+    <!-- Section des informations produit -->
+    <section class="product-info">
+        <article class="product">
+            <img src="flipper-zero.jpg" alt="Flipper Zero, un appareil multifonction pour la manipulation de protocoles sans fil comme les infrarouges, RFID et Bluetooth." class="product-image">
+            <h2>Flipper Zero</h2>
+            <p><strong>Prix :</strong> $169.00</p>
+            <p><strong>Description :</strong> Un appareil multifonction permettant de manipuler des protocoles sans fil comme les infrarouges, RFID, et Bluetooth.</p>
+            <a href="https://shop.flipperzero.one/" class="cta-button" target="_blank" rel="noopener noreferrer">Acheter maintenant</a>
+        </article>
+
+        <article class="product">
+            <img src="t-embed.jpg" alt="T-Embed CC1101, module ESP32-S3 avec CC1101 pour des projets RF et la manipulation de protocoles sans fil." class="product-image">
+            <h2>T-Embed CC1101</h2>
+            <p><strong>Prix :</strong> $54.67</p>
+            <p><strong>Description :</strong> Module ESP32-S3 avec CC1101 pour des projets RF et la manipulation de protocoles sans fil.</p>
+            <a href="https://lilygo.cc/products/t-embed-cc1101" class="cta-button" target="_blank" rel="noopener noreferrer">Acheter maintenant</a>
+        </article>
+    </section>
+
+    <!-- Section de comparaison entre les deux produits -->
+    <section class="comparison">
+        <h2>Tableau de Comparaison</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Caractéristique</th>
+                    <th>Flipper Zero</th>
+                    <th>T-Embed CC1101</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fas fa-microchip"></i> Processeur</td>
+                    <td>ARM Cortex-M4 32-bit 64 MHz</td>
+                    <td>ESP32-S3 Dual-core LX7</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-tv"></i> Affichage</td>
+                    <td>Monochrome 128x64 px</td>
+                    <td>Couleur IPS 1.9" 170x320 px</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-rss"></i> Radio (CC1101)</td>
+                    <td>Oui</td>
+                    <td>Oui</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-signal"></i> Bande de fréquence</td>
+                    <td>315 MHz, 433 MHz, 868 MHz, 915 MHz</td>
+                    <td>300-348 MHz, 387-464 MHz, 779-928 MHz</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-credit-card"></i> Protocole NFC</td>
+                    <td>Oui</td>
+                    <td>Non</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-bluetooth"></i> Bluetooth</td>
+                    <td>Bluetooth LE 5.4</td>
+                    <td>Bluetooth LE 5</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-tv"></i> Écran</td>
+                    <td>Monochrome LCD 128x64 px</td>
+                    <td>ST7789V IPS TFT LCD 170x320 px</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-battery-full"></i> Batterie</td>
+                    <td>LiPo 2100 mAh</td>
+                    <td>LiPo 1300 mAh</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-battery-half"></i> Autonomie</td>
+                    <td>28 jours</td>
+                    <td>10 jours</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-wifi"></i> Wi-Fi</td>
+                    <td>Non</td>
+                    <td>Wi-Fi 802.11 b/g/n</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-ruler"></i> Dimensions</td>
+                    <td>100x40x25 mm</td>
+                    <td>85x50x15 mm</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-weight-hanging"></i> Poids</td>
+                    <td>102 g</td>
+                    <td>50 g</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 Comparaison des appareils sans fil. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Script pour activer/désactiver le mode sombre -->
+    <script>
+        // Fonction pour activer ou désactiver le mode sombre
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+
+</html>
