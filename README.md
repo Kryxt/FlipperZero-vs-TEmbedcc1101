@@ -1,4 +1,5 @@
 # Comparaison Flipper Zero vs T-Embed CC1101
+![maxresdefault](https://github.com/user-attachments/assets/0455fc9e-f91f-4383-8563-e28517877b5a)
 
 Ce projet propose une comparaison détaillée entre deux outils populaires dans le domaine des projets sans fil et de la manipulation de protocoles RF : **Flipper Zero** et **T-Embed CC1101**. Ce README présente un aperçu des caractéristiques de chaque appareil, ainsi qu'un tableau de comparaison des spécifications techniques.
 
